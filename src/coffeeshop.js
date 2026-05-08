@@ -5,8 +5,8 @@ const createDrink = (type) => {
 
 const prepareOrder = (drink) => {
   console.log(`Prepering ${drink.type}...`);
-  const tickerNumber = Math.floor(Math.random() * 1000);
-  return tickerNumber;
+  const ticketNumber = Math.floor(Math.random() * 1000);
+  return ticketNumber;
 };
 
 const processPayment = (ticketNumber, amount) => {
