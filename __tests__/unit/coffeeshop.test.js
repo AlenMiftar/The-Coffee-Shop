@@ -16,9 +16,9 @@ describe("createDrink with a unknown type", () => {
 
 describe("prepareOrder ticket number ", () => {
   test("prepareOrder returns a ticket number between 0 and 999", () => {
-    const drink = createDrink("espresso");
+    const drink = createDrink("latte");
     const ticket = prepareOrder(drink);
-    expect(ticket).toBeGreaterThanOrEqual(1);
+    expect(ticket).toBeGreaterThanOrEqual(0);
     expect(ticket).toBeLessThan(1000);
   });
 });
